@@ -1,0 +1,13 @@
+.appFooter {
+    min-height: 4vh;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .appFooter a {
+    text-decoration: none;
+    cursor: pointer;
+  }

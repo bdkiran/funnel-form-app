@@ -1,0 +1,66 @@
+.funnelButtons {
+    width: 100%;
+}
+
+.funnelButtons ul {
+    text-align: center;
+    list-style-type: none;
+    /*This will change with screen size*/
+    padding: 30px 300px 20px;
+}
+
+.styledCheckbox {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+
+.styledCheckbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.funnelButton {
+    border: 2px solid #e07900;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom,#fbb300,#e08600);
+    padding: 12px 0;
+    width: 100%;
+    display: block;
+}
+
+.funnelButton h4 {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .funnelButtons ul {
+        padding: 30px 100px 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .funnelButtons ul {
+        padding: 30px 40px 20px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .funnelButtons ul {
+        padding: 20px 0 10px;
+    }
+}
+
+
+

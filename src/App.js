@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import FormControl from './components/FormControl';
+import TopBar from './components/navigationComponents/TopBar';
+import BottomBar from './components/navigationComponents/BottomBar'
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <TopBar/>
+      <div className="app-main">
+        <div className="app-main2-l"/>
+        <div className="app-main2-m">
+          <FormControl/>
+        </div>
+        <div className="app-main2-r"/>
+      </div>
+      <BottomBar/>
     </div>
   );
 }

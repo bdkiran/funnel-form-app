@@ -1,0 +1,13 @@
+
+.appHeader {
+    background-color: #282c34;
+    min-height: 5vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .appHeader  img{
+    max-width: 300px;
+  }
