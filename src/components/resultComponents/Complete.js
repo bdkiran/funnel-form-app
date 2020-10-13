@@ -4,7 +4,7 @@ export class Complete extends Component {
     
     componentDidMount() {
         let payload = this.createPayload();
-        this.sendRequestToBackend(payload);
+        //this.sendRequestToBackend(payload);
     }
 
     createPayload = () => {
@@ -18,22 +18,22 @@ export class Complete extends Component {
         return urlEncodedData;
     }
 
-    sendRequestToBackend = (payload) => {
-        // create a new XMLHttpRequest
-        let xhr = new XMLHttpRequest();
-        let url = 'http://localhost:8080/form';
+    // sendRequestToBackend = (payload) => {
+    //     // create a new XMLHttpRequest
+    //     let xhr = new XMLHttpRequest();
+    //     let url = 'http://localhost:8080/form';
 
-        xhr.open('POST', url, true);
-        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    //     xhr.open('POST', url, true);
+    //     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
-        xhr.onreadystatechange = function () { // Call a function when the state changes.
-            if (this.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                console.log(xhr.responseText);
-            }
-        }
+    //     xhr.onreadystatechange = function () { // Call a function when the state changes.
+    //         if (this.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+    //             console.log(xhr.responseText);
+    //         }
+    //     }
 
-        xhr.send(payload);
-    }
+    //     xhr.send(payload);
+    // }
 
     render() {
         return (

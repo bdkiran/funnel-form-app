@@ -76,7 +76,7 @@ class FormControl extends Component {
         const allState = [howMuchQuestion, roleQuestion, vehicleQuestion, whenQuestion ];
         switch (step) {
             case 0:
-                return <FormComponent />            
+                return <FormComponent handleSubmit={this.handleNextStep}/>            
             case 1:
                 return <QuestionComponent handleOptionSelect={this.handleOptionSelect}
                         loadedComponent={howMuchQuestion} componentName="howMuchQuestion"/>
